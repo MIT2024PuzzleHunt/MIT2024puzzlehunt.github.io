@@ -1,33 +1,32 @@
-// Code skeleton by Michael Tang, edits by Shuli Jones
+// Code skeleton and hashing by Michael Tang, minor edits by Shuli Jones
 
-function hashAnswer(submission) {
-    var strippedSubmission = submission.toUpperCase().replace(/[^A-Z0-9]/g, "");
+function hashAnswerReal(submission) {
+    const strippedSubmission = submission.toUpperCase().replace(/[^A-Z0-9]/g, "");
     var submissionHashCode = 0;
     for (var i = 0; i < strippedSubmission.length; i++) {
-        var char = strippedSubmission.charCodeAt(i);
+        const char = strippedSubmission.charCodeAt(i);
         submissionHashCode = (submissionHashCode * 2019) + char;
         submissionHashCode %= 4294967296;
     }
     return submissionHashCode;
 }
 
+function hashAnswerTest(submission) {
+    return submission;
+}
+
 function checkAnswer(puzzleId, submission) {
-    var answerHashCodes = {
-        // put answers and their hashes here in the form
-        // "PUZZLEID": HASH OF ANSWER,
-        // "ANOTHER PUZZLEID": ANOTHER HASH OF ANSWER        
-        // you can write the hash function above in a web browser console and run it
-        // on your actual answers to compute the hashes to put here
+    const answerHashCodes = {
+        'arts-1': 5,
     }    
-    var answerHashCode = answerHashCodes[puzzleId];    
-    if (hashAnswer(submission) == answerHashCode) {
+    const answerHashCode = answerHashCodes[puzzleId];    
+    if (hashAnswerTest(submission) == answerHashCode) {
         return 'Correct!';
     } else {return 'Incorrect.';}
 }
 
-function check() {
-    document.getElementById('result').innerHTML = 
-        checkAnswer(document.getElementById('title').innerHTML, 
-            document.getElementById('answer-textfield').value).message;
-    // change these id's as necessary to suit the website
+function check(puzzleName) {
+    const answer = document.forms.namedItem(puzzleName + '--ac')[0].value;
+    document.getElementById(puzzleName + '--result').innerHTML =
+        checkAnswer(puzzleName, answer);
 }

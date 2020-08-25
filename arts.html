@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="answer-checker.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
@@ -57,6 +58,12 @@
       <h4>Visual Arts (Art, Culture, and Technology/History of Art, Architecture, and Design) — Title</h4>
       <p>This puzzle is still in progress. Hang tight!</p>
       <!-- Embed Puzzle HERE -->
+      <form class="answer-checker" id="arts-1--ac" onsubmit="check('arts-1');return false;">
+        <label for="arts-1--ai">Submit your answer:</label>
+        <input type="text" class="answer-input" id="arts-1--ai">
+        <input type="submit">
+      </form>
+      <p id="arts-1--result"></p>
     </div>
     <div id="2" class="tab-pane fade">
       <h4>Music — Title</h4>
