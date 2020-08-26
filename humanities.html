@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="answer-checker.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
@@ -57,21 +58,45 @@
       <h4>History — Canon of Changes</h4>
       <p>This puzzle is still in progress. Hang tight!</p>
       <iframe src="https://docs.google.com/document/d/e/2PACX-1vSHRkJDHGLs5zeay8o28qMjRGkgT3p53xp8lNXZ674rKyCdJhA0098JC2CgDpL6PRYUS3UlzJwoekqk/pub?embedded=true" style="width:100%; height:90vh;"></iframe>
+      <form class="answer-checker" id="hum-1--ac" onsubmit="check('hum-1');return false;">
+        <label for="hum-1--ai">Submit your answer:</label>
+        <input type="text" class="answer-input" id="hum-1--ai">
+        <input type="submit" value="Submit">
+      </form>
+      <p id="hum-1--result"></p>
     </div>
     <div id="2" class="tab-pane fade">
       <h4>Literature — Title</h4>
       <p>This puzzle is still in progress. Hang tight!</p>
       <!-- Embed Puzzle HERE -->
+      <form class="answer-checker" id="hum-2--ac" onsubmit="check('hum-2');return false;">
+        <label for="hum-2--ai">Submit your answer:</label>
+        <input type="text" class="answer-input" id="hum-2--ai">
+        <input type="submit" value="Submit">
+      </form>
+      <p id="hum-2--result"></p>
     </div>
     <div id="3" class="tab-pane fade">
       <h4>Philosophy — Title</h4>
       <p>This puzzle is still in progress. Hang tight!</p>
       <!-- Embed Puzzle HERE -->
+      <form class="answer-checker" id="hum-3--ac" onsubmit="check('hum-3');return false;">
+        <label for="hum-3--ai">Submit your answer:</label>
+        <input type="text" class="answer-input" id="hum-3--ai">
+        <input type="submit" value="Submit">
+      </form>
+      <p id="hum-3--result"></p>
     </div>
     <div id="4" class="tab-pane fade">
       <h4>Global Languages — All Around The World in Eight Languages</h4>
       <p>This puzzle is still in progress. Hang tight!</p>
       <!-- Embed Puzzle HERE -->
+      <form class="answer-checker" id="hum-4--ac" onsubmit="check('hum-4');return false;">
+        <label for="hum-4--ai">Submit your answer:</label>
+        <input type="text" class="answer-input" id="hum-4--ai">
+        <input type="submit" value="Submit">
+      </form>
+      <p id="hum-4--result"></p>
     </div>
   </div>
 </div>
