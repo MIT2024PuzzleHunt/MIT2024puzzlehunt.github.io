@@ -1,6 +1,6 @@
 // Code skeleton and hashing by Michael Tang, minor edits by Shuli Jones
 
-function hashAnswerReal(submission) {
+function hashAnswer(submission) {
     const strippedSubmission = submission.toUpperCase().replace(/[^A-Z0-9]/g, "");
     var submissionHashCode = 0;
     for (var i = 0; i < strippedSubmission.length; i++) {
@@ -9,10 +9,6 @@ function hashAnswerReal(submission) {
         submissionHashCode %= 4294967296;
     }
     return submissionHashCode;
-}
-
-function hashAnswerTest(submission) {
-    return submission;
 }
 
 function checkAnswer(puzzleId, submission) {
@@ -30,7 +26,7 @@ function checkAnswer(puzzleId, submission) {
         'hum-1': 5,
         'hum-2': 5,
         'hum-3': 5,
-        'hum-4': 5,
+        'hum-4': 2645599512,
         'int-1': 5,
         'int-2': 5,
         'int-3': 5,
@@ -43,7 +39,7 @@ function checkAnswer(puzzleId, submission) {
         'ss-5': 5
     }    
     const answerHashCode = answerHashCodes[puzzleId];    
-    if (hashAnswerTest(submission) == answerHashCode) {
+    if (hashAnswer(submission) == answerHashCode) {
         return 'Correct!';
     } else {return 'Incorrect.';}
 }
