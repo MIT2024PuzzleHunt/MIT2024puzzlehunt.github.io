@@ -40,7 +40,7 @@ function checkAnswer(puzzleId, submission) {
     }    
     const answerHashCode = answerHashCodes[puzzleId];    
     if (hashAnswer(submission) == answerHashCode) {
-        if (puzzleId == 'hum-3') {
+        if (puzzleId.equals('hum-3')) {
             return 'Correct! Go to this link for the second part of the puzzle: https://drive.google.com/file/d/1VT-EoxnKuKNbrDmd-V0Eto_7BjBUBwIj/view?usp=sharing';
         } else {
             return 'Correct!';
