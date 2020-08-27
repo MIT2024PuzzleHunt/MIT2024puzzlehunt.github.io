@@ -25,7 +25,7 @@ function checkAnswer(puzzleId, submission) {
         'ers-6': 5,
         'hum-1': 1756035409,
         'hum-2': 3150385467,
-        'hum-3': 5,
+        'hum-3': 65,
         'hum-4': 2645599512,
         'int-1': 5,
         'int-2': 5,
@@ -40,7 +40,11 @@ function checkAnswer(puzzleId, submission) {
     }    
     const answerHashCode = answerHashCodes[puzzleId];    
     if (hashAnswer(submission) == answerHashCode) {
-        return 'Correct!';
+        if (puzzleId == 'hum-3') {
+            return 'Correct! Go to this link for the second part of the puzzle: https://drive.google.com/file/d/1VT-EoxnKuKNbrDmd-V0Eto_7BjBUBwIj/view?usp=sharing';
+        } else {
+            return 'Correct!';
+        }
     } else {return 'Incorrect.';}
 }
 
