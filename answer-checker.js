@@ -41,14 +41,7 @@ function checkAnswer(puzzleId, submission) {
     }    
     const answerHashCode = answerHashCodes[puzzleId];    
     if (hashAnswer(submission) == answerHashCode) {
-        if (hashAnswer(submission) == 1663599289) {
-            return 'Correct! Go to this link for the second part of the puzzle: https://drive.google.com/file/d/1l4rdWr75xo0DW3h2Fmgm15zkpQ4mQGMc/view?usp=sharing';
-        }
-        else if (hashAnswer(submission) == 236660175) {
-            return 'Correct! Go here: https://drive.google.com/file/d/1i0vVxziutTmIQTD-739F1cf2LrbqLcR7/view?usp=sharing';
-        } else {
-            return 'Correct!';
-        }
+        return 'Correct!';
     } else {return 'Incorrect.';}
 }
 
