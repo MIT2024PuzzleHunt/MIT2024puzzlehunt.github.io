@@ -24,7 +24,7 @@ function checkAnswer(puzzleId, submission) {
         'ers-5': 5,
         'ers-6': 5,
         'hum-1': 1756035409,
-        'hum-2': 3150385467,
+        'hum-2': 3962465687,
         'hum-3': 1663599289,
         'hum-35': 236660175,
         'hum-4': 2645599512,
