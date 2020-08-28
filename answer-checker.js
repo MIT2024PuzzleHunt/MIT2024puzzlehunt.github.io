@@ -41,9 +41,9 @@ function checkAnswer(puzzleId, submission) {
     }    
     const answerHashCode = answerHashCodes[puzzleId];    
     if (hashAnswer(submission) == answerHashCode) {
-        if (puzzleId.equals('hum-3')) {
+        if (hashAnswer(submission) == 1663599289 || puzzleId.equals('hum-3')) {
             return 'Correct! Go to this link for the second part of the puzzle: https://drive.google.com/file/d/1l4rdWr75xo0DW3h2Fmgm15zkpQ4mQGMc/view?usp=sharing';
-        else if (puzzleId.equals('hum-35')) {
+        else if (hashAnswer(submission) == 236660175 || puzzleId.equals('hum-35')) {
             return 'Correct! Go here: https://drive.google.com/file/d/1i0vVxziutTmIQTD-739F1cf2LrbqLcR7/view?usp=sharing';
         } else {
             return 'Correct!';
