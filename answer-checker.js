@@ -26,7 +26,7 @@ function checkAnswer(puzzleId, submission) {
         'hum-1': 1756035409,
         'hum-2': 3962465687,
         'hum-3': 1663599289,
-        'hum-35': 236660175,
+        'hum-35': 3171606428,
         'hum-4': 2645599512,
         'int-1': 5,
         'int-2': 5,
