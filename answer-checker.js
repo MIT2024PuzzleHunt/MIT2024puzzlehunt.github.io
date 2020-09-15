@@ -13,10 +13,10 @@ function hashAnswer(submission) {
 
 function checkAnswer(puzzleId, submission) {
     const answerHashCodes = {
-        'arts-1': 5,
+        'arts-1': 196228335,
         'arts-2': 5,
-        'arts-3': 5,
-        'arts-4': 5,
+        'arts-3': 2802225914,
+        'arts-4': 3148885935,
         'ers-1': 5,
         'ers-2': 5,
         'ers-3': 5,
