@@ -14,7 +14,7 @@ function hashAnswer(submission) {
 function checkAnswer(puzzleId, submission) {
     const answerHashCodes = {
         'arts-1': 196228335,
-        'arts-2': 5,
+        'arts-2': 90937717,
         'arts-3': 2802225914,
         'arts-4': 3148885935,
         'ers-1': 5,
