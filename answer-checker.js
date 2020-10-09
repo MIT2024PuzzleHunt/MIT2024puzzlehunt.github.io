@@ -33,11 +33,11 @@ function checkAnswer(puzzleId, submission) {
         'int-3': 5,
         'int-4': 5,
         'int-5': 5,
-        'ss-1': 5,
+        'ss-1': 2313900431,
         'ss-2': 1946263056,
         'ss-3': 1525674401,
         'ss-4': 25073752,
-        'ss-5': 2313900431
+        'ss-5': 5
     }    
     const answerHashCode = answerHashCodes[puzzleId];    
     if (hashAnswer(submission) == answerHashCode) {
