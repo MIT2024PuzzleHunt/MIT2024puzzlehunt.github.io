@@ -34,9 +34,9 @@ function checkAnswer(puzzleId, submission) {
         'int-4': 5,
         'int-5': 5,
         'ss-1': 5,
-        'ss-2': 5,
+        'ss-2': 1946263056,
         'ss-3': 5,
-        'ss-4': 5,
+        'ss-4': 25073752,
         'ss-5': 5
     }    
     const answerHashCode = answerHashCodes[puzzleId];    
